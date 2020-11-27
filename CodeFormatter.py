@@ -188,10 +188,6 @@ class Cfg:
         return self.cfg[key]
 
     def Total_Replace(self, Aline, numLine, raw_line_str, formater):
-        if numLine == 22:
-            a =100
-
-
         tmp_space_store = ""
         if formater.last_line_unmatched_small_bracket != 0 :
             tmp_space_store, Aline = Tools.separate_left_space(raw_line_str)
